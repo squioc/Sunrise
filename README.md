@@ -2,12 +2,12 @@
 **Sunrise** is a pythonic command line framework to ease development of command line utilities.
 It depends on [argparse](http://code.google.com/argparse/) for arguments parsing.
 
-In order to create your own command line utility, you have to ... from Sunrise class.
+In order to create your own command line utility, you have to inherit from Sunrise class.
 For each command you want from your command line utility, create a *'do_\<command_name\>'* method.
 it must accept two arguments:
 
 - a list of arguments passed throw the command line
-- a dictionnary of options your utility accept
+- a dictionnary of options your utility accepts
 
 Example:
 
@@ -30,4 +30,4 @@ To add an additional option, in your utility, call *'add_option'* method in the 
             super(Heroku, self).__init__()
             self.add_option('<option_name'>, <options_parameter>)
 
-See [argparse's add\_argument method](http://argparse.googlecode.com/svn/trunk/doc/add_argument.html) to know available parametes for *'\<option_parameter\>'*
+See [argparse's add\_argument method](http://argparse.googlecode.com/svn/trunk/doc/add_argument.html) to know available parameters for *'\<option_parameter\>'*
