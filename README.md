@@ -9,6 +9,7 @@ it must accept two arguments:
 - a list of arguments passed throw the command line
 - a dictionnary of options your utility accept
 
+
     import Sunrise
     import os
 
